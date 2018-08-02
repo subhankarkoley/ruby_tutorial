@@ -3,7 +3,13 @@
 
 # The program should read three integers: the number of students in each of the three classes, a, b and c respectively.
 
+
 # In the first test there are three groups. The first group has 20 students and thus needs 10 desks. The second group has 21 students, so they can get by with no fewer than 11 desks. 11 desks is also enough for the third group of 22 students. So we need 32 desks in total. 
+def number_of_bench_replace(class_a,class_b,class_c)
+	return (class_a / 2 + class_a %2) + (class_b / 2 +class_b%2) + (class_c / 2 + class_c%2)
+end
+#puts number_of_bench_replace(1,1,1)
+
 # Test:
 
 # 20
