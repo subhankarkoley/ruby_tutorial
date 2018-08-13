@@ -4,13 +4,23 @@
 
 # In all the problems input the data using input() and print the result using print(). 
 
-def sum_of_numbers(sum, input)
+#def sum_of_numbers()
+#	sum=0
+#	for a in 1 .. 10
+#		sum = sum + gets.chomp.to_i
+#	end
+#	print sum	
+#end
+require "/home/subhankar/Ruby/ruby_tutorial/Chapter_4/Three_Sum_of_ten_numbers.rb"
 
-	for i in 1 .. input
-		a = gets.chomp.to_i
-		sum = sum+a
+describe "Sum of ten numbers" do
+	it "should capable of take 10 integer as input and check wheather the output is the sum of the given integer" do
+		sum = 0 
+		input = 10
+		#a = 0+1+2+3+4+5+6+7+8+9
+		sum = sum_of_numbers(sum,input)
+		expect(sum).to eq 45
 	end
-	return sum
 end
 
 #sum_of_numbers

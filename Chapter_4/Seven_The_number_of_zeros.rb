@@ -3,6 +3,21 @@
 # Given N numbers: the first number in the input is N, after that N integers are given. Count the number of zeros among the given integers and print it.
 
 # You need to count the number of numbers that are equal to zero, not the number of zero digits. 
+def number_of_zero()
+	zero_number=0
+	number=gets.chomp.to_i
+	for i in 1 .. number
+	if gets.chomp.to_i==0
+	zero_number=zero_number+1
+	else
+	zero_number=zero_number
+	end
+	end
+	puts zero_number
+end
+number_of_zero
+
+
 
 # Test:
 # 5

@@ -3,6 +3,19 @@
 # For given integer n ≤ 9 print a ladder of n steps. The k-th step consists of the integers from 1 to k without spaces between them.
 
 # To do that, you can use the sep and end arguments for the function print()
+def ladder()
+	n=gets.chomp.to_i
+	for i in 1 .. n
+		for j in 1 .. i
+		print j
+		end
+		print "\n"
+		n +=1
+	end
+end
+ladder
+
+
 
 # Test:
 # 3

@@ -1,5 +1,14 @@
 # Clock face - 1
-# H hours, M minutes and S seconds are passed since the midnight (0 ≤ H < 12, 0 ≤ M < 60, 0 ≤ S < 60). Determine the angle (in degrees) of the hour hand on the clock face right now. 
+# H hours, M minutes and S seconds are passed since the midnight (0 ≤ H < 12, 0 ≤ M < 60, 0 ≤ S < 60). 
+# Determine the angle (in degrees) of the hour hand on the clock face right now. 
+def the_angle(hour,minute,sec)
+	return (hour*30 + minute*0.5 + sec*(0.5/60)).to_f.round(8)
+end
+
+puts the_angle(0,2,1)
+
+
+
 
 # Test:
 # 1

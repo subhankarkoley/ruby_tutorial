@@ -1,6 +1,17 @@
 # Car route
 # A car can cover distance of N kilometers per day. How many days will it take to cover a route of length M kilometers? The program gets two numbers: N and M. 
 # Test:
+def car_route(covering_distance,route_length)
+	if route_length%covering_distance==0
+		return (route_length/covering_distance)
+	else
+		return (route_length/covering_distance)+1
+	end
+end
+
+puts car_route(700,2100)
+
+
 
 # 700
 # 750		2

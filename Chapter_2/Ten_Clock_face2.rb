@@ -1,5 +1,10 @@
 # Clock face - 2
 # Hour hand turned by α degrees since the midnight. Determine the angle by which minute hand turned since the start of the current hour. Input and output in this problems are floating-point numbers. 
+def clock_face(angle)
+	return (angle%30)*12
+end
+puts clock_face(190)
+
 # Test:
 # 190		120
 

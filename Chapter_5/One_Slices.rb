@@ -19,6 +19,13 @@
 # In the eighth line, print every second character of the string in reverse order, starting from the last one.
 
 # In the ninth line, print the length of the given string. 
+def slices(str)
+	puts str[2]
+	puts str[-2]
+
+end
+
+slices("Abrakadabra")
 
 # Test:
 # Abrakadabra

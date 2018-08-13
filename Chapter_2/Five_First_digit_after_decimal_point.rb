@@ -1,5 +1,10 @@
 # First digit after decimal point
-# Given a positive real number, print its first digit to the right of the decimal point. 
+# Given a positive real number, print its first digit to the right of the decimal point.
+def first_digit(number)
+	return ((number*10)%10).to_i
+end
+puts first_digit(0.001)
+ 
 # Test:
 # 1.79		7
 

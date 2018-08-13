@@ -4,6 +4,16 @@
 # 1^3+2^3+…+N^3
 
 # In all the problems input the data using input() and print the result using print(). 
+def sum_of_cubes()
+	sum=0
+	n=gets.chomp.to_i
+	for i in 1 .. n	
+		sum=sum+i**3
+	end
+	puts sum
+end
+sum_of_cubes
+
 
 # Test:
 # 3		36

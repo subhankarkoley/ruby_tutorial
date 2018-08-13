@@ -1,20 +1,19 @@
 # Series2
 
 # Given two integers A and B. Print all numbers from A to B inclusively, in ascending order, if A < B, or in descending order, if A ≥ B. 
-def series2 (start,finish)
-	for i in start..finish
-		puts i
+#def series2 (start,finish)
+#	for i in start..finish
+#		puts i
+#	end
+#end
+
+#puts series2(1,10)
+require "/home/subhankar/Ruby/ruby_tutorial/Chpter_4/Two_Series2.rb"
+describe "it will show the series of numbers" do
+	it "should take 1,10 as input and return 1,2,3,4,5,6,7,8,9,10 as output" do
+		expect(series2(1,10)).to eq [1,2,3,4,5,6,7,8,9,10]
 	end
 end
-
-def series3(method, *args)
-	for i in args[0] .. args[1] 
-		puts i
-	end
-end
-
-series3(1,-14,10)
-
 
 
 

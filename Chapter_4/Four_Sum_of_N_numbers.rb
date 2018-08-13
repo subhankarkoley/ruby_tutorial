@@ -4,6 +4,17 @@
 
 # The first line of input contains the integer N, which is the number of integers to follow. Each of the next N lines contains one integer. Print the sum of these N integers. 
 
+def sum_of_n_numbers()
+	sum=0
+	a=gets.chomp.to_i
+#	puts a
+	for i in 1 .. a
+		sum=sum+gets.chomp.to_i
+	end
+	puts sum
+end	
+
+sum_of_n_numbers
 # Test:
 # 10
 # 1

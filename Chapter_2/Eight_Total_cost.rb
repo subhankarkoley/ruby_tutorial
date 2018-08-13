@@ -1,5 +1,12 @@
 # Total cost
 # A cupcake costs A dollars and B cents. Determine, how many dollars and cents should one pay for N cupcakes. A program gets three numbers: A, B, N. It should print two numbers: total cost in dollars and cents. 
+def cost_of_cupcakes(dollers,cents,cupcakes)
+	return (((dollers*100)+cents)*cupcakes)/100,(((dollers*100)+cents)*cupcakes)%100
+end
+puts cost_of_cupcakes(10,15,2)
+
+
+
 # Test:
 # 2
 # 50
