@@ -1,6 +1,19 @@
 # Greater than previous
 
 # Given a list of numbers, find and print all the elements that are greater than the previous element. 
+def greater_than_previous(arr)
+	b=Array.new
+	for i in 0 ... arr.length 
+		if arr[i]>arr[i-1]
+		b<<arr[i]
+		end
+		i=i+1
+	end
+	return b
+end
+c=[1,5,2,4,3]
+puts greater_than_previous(c)
+
 
 # Test:
 

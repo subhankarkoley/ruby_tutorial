@@ -1,6 +1,19 @@
 # The maximum of the sequence
-
 # A sequence consists of integer numbers and ends with the number 0. Determine the largest element of the sequence.
+
+def max_in_series(argc,*args)
+	max=0
+	i=0
+	while args[i] !=0 do
+		if args[i]>max
+			max=args[i]
+		end
+		i=i+1
+	end
+	puts max
+	
+end
+puts max_in_series(1,1,7,9,0)
 
 # Test:
 

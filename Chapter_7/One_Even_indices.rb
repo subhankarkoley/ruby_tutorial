@@ -1,7 +1,17 @@
 # Even indices
 
 # Given a list of numbers, find and print all the list elements with an even index number. (i.e. A[0], A[2], A[4], ...). 
-
+def even_number(arr)
+	b = Array.new
+	for i in 0 ... arr.length
+		if i % 2 == 0
+		 b<<arr[i]
+		end
+	end	
+	return b
+end
+c = [6]
+puts even_number(c)
 # Test:
 
 # 1 2 3 4 5		1 3 5

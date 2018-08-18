@@ -1,7 +1,22 @@
 # The number of elements equal to the maximum
 
 # A sequence consists of integer numbers and ends with the number 0. Determine how many elements of this sequence are equal to its largest element.
+def equal_to_the_max(argc,*args)
+	i=0
+	count=1
+	max=0
+	while args[i]!=0 do
+		if args[i]>max
+			count=count
+		elsif args[i]==max
+			count=count+1
+		end
+	i=i+1
+	end
+	puts count	
 
+end
+puts equal_to_the_max(1,1,7,9,0)
 # Test:
 # 1
 # 7

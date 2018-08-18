@@ -1,6 +1,21 @@
 # The number of elements that are greater than the previous one
 
 # A sequence consists of integer numbers and ends with the number 0. Determine how many elements of this sequence are greater than their neighbours above. 
+def greater_number(argc,*args)
+	i=0
+	count=0
+	while args[i] !=0 do
+		if args[i]<args[i+1]
+			count=count+1
+		end
+		i=i+1
+	end
+	puts count
+end
+
+puts greater_number(1,1,5,2,4,3,0)
+	
+
 
 # Test:
 
