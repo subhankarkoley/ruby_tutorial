@@ -1,6 +1,18 @@
 # The average of the sequence
 
 # Determine the average of all elements of the sequence ending with the number 0.
+def average(argc,*args)
+	sum=0
+	i=0
+	while args[i]!=0 do
+		sum=sum+args[i]
+		i=i+1
+	end
+	return (sum/i).to_f.round(8)
+end
+
+puts average(1,7880,0)
+
 
 # Test:
 

@@ -1,6 +1,20 @@
 # The index of the maximum of a sequence
 
 # A sequence consists of integer numbers and ends with the number 0. Determine the index of the largest element of the sequence. If the highest element is not unique, print the index of the first of them.
+def index_of_max(argc,*args)
+	max=0
+	i=0
+	while args[i] !=0 do
+		if args[i]>max
+			max=args[i]
+		end
+		i=i+1
+	end
+	puts i,max
+end 
+
+puts index_of_max(1,1,7,9,0)
+
 
 # Test:
 

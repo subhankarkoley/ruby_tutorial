@@ -1,6 +1,20 @@
 # The number of even elements of the sequence
 
 # Determine the number of even elements in the sequence ending with the number 0.
+def even_elements(argc,*args)
+	i=0
+	count=0
+	while args[i]!=0 do
+		if args[i]%2==0
+			count =count+1
+		end
+		i=i+1
+	end
+	puts count
+end
+
+puts even_elements(1,2,1,4,0)
+
 # Test:
 # 2
 # 1

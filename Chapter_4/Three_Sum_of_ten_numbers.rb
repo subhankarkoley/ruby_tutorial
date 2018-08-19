@@ -4,6 +4,18 @@
 
 # In all the problems input the data using input() and print the result using print(). 
 
+def sum_of_numbers(sum, input)
+
+	for i in 1 .. input
+		a = gets.chomp.to_i
+		sum = sum+a
+	end
+	return sum
+end
+
+#sum_of_numbers
+	
+
 # Test:
 # 0
 # 1

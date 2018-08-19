@@ -5,6 +5,13 @@
 # Given a non-negative integer n, print the nth Fibonacci number ϕn.
 
 # This problem can also be solved with a for loop.
+def fibonacci(n)
+	return n if n<=1
+	fibonacci(n-1) + fibonacci(n-2)
+
+
+end
+puts fibonacci(6)
 # test:
 # 6		8
 

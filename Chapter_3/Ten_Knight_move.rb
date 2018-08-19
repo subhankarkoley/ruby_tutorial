@@ -3,6 +3,39 @@
 # Chess knight moves like the letter L. It can move two cells horizontally and one cell vertically, or two cells vertically and one cells horizontally. Given two different cells of the chessboard, determine whether a knight can go from the first cell to the second in one move.
 
 # The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output YES if a knight can go from the first cell to the second in one move, or NO otherwise(Ghorar Chal)
+def knight_moves(x1,y1,x2,y2)
+	if (x1+2 == x2 and y1+1== y2) or (x1+2 == x2 and y1 -1 == y2) 
+		return "YES"
+	elsif (x1 -2 == x2 and y1 +1 == y2) or (x1-2 == x2 and y1 -1 == y2)
+		return "YES"
+	elsif (x1+1 == x2 and y1 +2 == y2) or (x1+1 == x2 and y1 - 2 == y2)
+		return "YES"
+	elsif (x1 -1 == x2 and y1 + 2 == y2) or (x1 -1 == x2 and y1 -2 == y2)
+		return "YES"
+#	if x-2==x1 and y-1==y1
+#		return "YES"
+#	elsif x-2==x1 and y+1==y1
+#		return "YES"
+#	elsif x-1==x1 and y-2==y1
+#		return "YES"
+#	elsif x-1==x1 and y+2==y1
+#		return "YES"
+#	elsif x+1==x1 and y-2==y1
+#		return "YES"
+#	elsif x+1==x1 and y+2==y1
+#		return "YES"
+#	elsif x+2==x1 and y-1==y1
+#		return "YES"
+#	elsif x+2==x1 and y+1==y1
+#		return "YES"
+	else 
+		return "NO"
+	end
+end
+
+puts knight_moves(2,4,3,2)
+
+
 
 # Test:
 # 1

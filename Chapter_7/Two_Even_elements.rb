@@ -1,9 +1,21 @@
 # Even elements
-
 # Given a list of numbers, find and print all elements that are an even number. In this case use a for-loop that iterates over the list, and not over its indices! That is, don't use range()
-# Test:
-# 1 2 2 3 3 3 4		2 2 4
+def even_elements(arr)
+	b=Array.new
+	for i in 0 ... arr.length
+		if arr[i]%2 ==0
+		b<<arr[i]
+		end
+		i=i+1
+	end
+	return b
+end
+c=[1,1,1,1,1,1,2]
+puts even_elements(c)
 
+
+
+# Test:
 # 1 2 3 4 5		2 4
 
 # 2 4 6 8		2 4 6 8

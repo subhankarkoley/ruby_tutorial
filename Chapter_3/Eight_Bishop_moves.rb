@@ -3,6 +3,23 @@
 # In chess, the bishop moves diagonally, any number of squares. Given two different squares of the chessboard, determine whether a bishop can go from the first to the second in one move.
 
 # The program receives as input four numbers from 1 to 8, specifying the column and row numbers of the starting square and the column and row numbers of the ending square. The program should output YES if a Bishop can go from the first square to the second in one move, or NO otherwise. (Noukar chal)
+def bishop_move(initial1,initial2,final1,final2)
+	if (initial1>final2) and (initial2>final2)
+		return "YES"
+	elsif (initial1<final1) and (initial2<final2)
+		return "YES"
+	elsif (initial1>final1) and (initial2<final2)
+		return "YES"
+	elsif (initial1<final1) and (initial2>final2)
+		return "YES"
+	elsif (initial1==final1) || (initial2<final2)
+		return "NO"
+	else 
+		return "NO"
+	end
+end
+
+#puts bishop_move(4,4,5,5)
 
 # Test:
 # 4

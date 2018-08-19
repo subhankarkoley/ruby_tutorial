@@ -1,6 +1,15 @@
 # Series1
 
 # Given two integers A and B (A ≤ B). Print all numbers from A to B inclusively.
+def series1(start,finish)
+
+	for i in start..finish 
+		puts i
+	end
+end
+
+#series2()
+
 
 # Test:
 

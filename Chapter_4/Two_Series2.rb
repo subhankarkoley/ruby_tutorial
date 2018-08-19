@@ -1,6 +1,22 @@
 # Series2
 
 # Given two integers A and B. Print all numbers from A to B inclusively, in ascending order, if A < B, or in descending order, if A ≥ B. 
+def series2 (start,finish)
+	for i in start..finish
+		puts i
+	end
+end
+
+def series3(method, *args)
+	for i in args[0] .. args[1] 
+		puts i
+	end
+end
+
+series3(1,-14,10)
+
+
+
 
 # Test:
 # 1

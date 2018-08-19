@@ -1,7 +1,18 @@
 # The power of two
 
 # For a given integer N, find the greatest integer x where 2x is less than or equal to N. Print the exponent value and the result of the expression 2x.
+def power_of_two(n)
+	power=2
+	p=0
+	n=gets.chomp.to_i
+	while power<=n do
+		power =2**p
+		p=p+1
+	end
+	puts p-2,power/2
+end
 
+power_of_two(3)
 # Test:
 
 # 50		5 32
